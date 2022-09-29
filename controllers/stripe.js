@@ -2,6 +2,8 @@ const dotenv = require("dotenv");
 dotenv.config();
 const stripe = require("stripe")(process.env.STRIPE_KEY);
 
+// Stripe API
+
 exports.paymentHandler = (req, res) => {
   stripe.charges.create(
     {
