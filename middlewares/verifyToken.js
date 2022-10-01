@@ -3,6 +3,8 @@ const dotenv = require('dotenv')
 
 dotenv.config()
 
+// JWT AUTH
+
 const verifyToken = (req,res,next) => {
     const authHeader = req.headers.token
 
